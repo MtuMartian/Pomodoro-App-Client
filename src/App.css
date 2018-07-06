@@ -1,0 +1,61 @@
+html, body, #app, #app>div {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-content {
+  float: left;
+  width: 100%;
+}
+
+div.column-sm {
+  background-color: #bbb;
+  display: inline;
+  text-align: left;
+  padding: 0px 16px;
+  float: left;
+  max-width: 240px;
+  height: 100%;
+}
+
+div.column-lg {
+  display: inline;
+  float: left;
+  width: auto;
+}
+
+p.detail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.detail:hover {
+  white-space: normal;
+  overflow: inherit;
+  text-overflow: inherit;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
