@@ -25,6 +25,26 @@ html, body, #app, #app>div {
 .App-content {
   float: left;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 16px 16px;
+  padding: 16px 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  width: 100%;
 }
 
 div.column-sm {
@@ -40,7 +60,8 @@ div.column-sm {
 div.column-lg {
   display: inline;
   float: left;
-  width: auto;
+  margin: 0px 16px;
+  width: 100%;
 }
 
 p.detail {
@@ -53,6 +74,26 @@ p.detail:hover {
   white-space: normal;
   overflow: inherit;
   text-overflow: inherit;
+}
+
+.timer {
+  font-size: 128px;
+}
+
+.timer-message {
+  font-size: 36px;
+}
+
+.timer-actions {
+}
+
+.timer-icon-btn {
+  margin: 16px;
+}
+
+.icon-btn-container {
+  display: inline-block;
+  margin: 16px 16px;
 }
 
 @keyframes App-logo-spin {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectList from './ProjectList/ProjectList.js';
+import ProjectMain from './ProjectMain/ProjectMainComponent.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,9 +13,6 @@ class App extends Component {
           ID: 0,
           name: 'Hello App',
           description: 'This is the starter app project... Yay!!!!!',
-          goals: [
-
-          ],
           sessions: [
 
           ]
@@ -23,14 +21,18 @@ class App extends Component {
           ID: 1,
           name: 'Foo Bar',
           description: 'This is a generic project',
-          goals: [
-
-          ],
           sessions: [
 
           ]
         }
-      ]
+      ],
+      selectedProject: {
+        ID: 0,
+        name: 'Hello App',
+        description: 'This is the starter app project... Yay!!!!!',
+        goals: [],
+        sessions: []
+      }
     }
   }
 
@@ -43,9 +45,7 @@ class App extends Component {
         </header>
         <div className="App-content">
           <ProjectList projects={this.state.projects} />
-          <div className="column-lg">
-            {null}
-          </div>
+          <ProjectMain project={this.state.selectedProject} />
         </div>
       </div>
     );
