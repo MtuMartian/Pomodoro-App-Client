@@ -53,7 +53,7 @@ div.column-sm {
   text-align: left;
   padding: 0px 16px;
   float: left;
-  max-width: 240px;
+  width: 240px;
   height: 100%;
 }
 
@@ -68,12 +68,14 @@ p.detail {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 240px;
 }
 
 p.detail:hover {
-  white-space: normal;
+  white-space: inherit;
   overflow: inherit;
   text-overflow: inherit;
+  width: 240px;
 }
 
 .timer {

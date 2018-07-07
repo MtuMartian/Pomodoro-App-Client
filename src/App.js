@@ -12,7 +12,7 @@ class App extends Component {
         {
           ID: 0,
           name: 'Hello App',
-          description: 'This is the starter app project... Yay!!!!!',
+          description: 'This is the starter app project! Yay!!!!!',
           sessions: [
 
           ]
@@ -32,7 +32,8 @@ class App extends Component {
         description: 'This is the starter app project... Yay!!!!!',
         goals: [],
         sessions: []
-      }
+      },
+      inProgress: false
     }
   }
 
@@ -45,7 +46,8 @@ class App extends Component {
         </header>
         <div className="App-content">
           <ProjectList projects={this.state.projects} />
-          <ProjectMain project={this.state.selectedProject} />
+          <ProjectMain project={this.state.selectedProject}
+            inProgress={this.state.inProgress} />
         </div>
       </div>
     );
